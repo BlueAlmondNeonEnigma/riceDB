@@ -14,40 +14,39 @@ while 1:
         continue
     if userInput[0] == "install":
         inputParsed = userInputP.split(' ')
-    if len(inputParsed) > 1:
-        if inputParsed[0] in data:
-            searchResult = searchPak(inputParsed[0], inputParsed[1], searchKey)
-            if searchResult is None:
-                print("No matching packages were found.")
-                continue
-            else:
-                print("Which package would you like to install?")
-                currentPackageNum = 0
-                for i in searchResult:
-                    currentPackageNum += 1
-                    packageN = i["Name"]
-                    print("%d) %s" % (currentPackageNum, packageN))
-                    choice = int(input('(#)>'))-1
-                    if searchResult[choice]:
-                        packageN = searchResult[choice]["Name"]
-                        packageD = searchResult[choice]["Description"]
-                        packageI = searchResult[choice]["Images"]
-                        packageR = searchResult[choice]["Github Repository"]
-                        divider = '*'*50
-                        print(divider)
-                        print("Name: %s" % packageN)
-                        print("Description: %s" % packageD)
-                        print("Images: %s" % ', '.join(packageI))
-                        print("Github Repository: %s" % packageR)
-                        print(divider)
-                        response = input(question % (packageN, inputParsed[0]))
-                        if response.lower() == 'y':
-                            print("Okay.")
+        if len(inputParsed) > 1:
+            if inputParsed[0] in data:
+                searchResult = searchPak(inputParsed[0], inputParsed[1], searchKey)
+                if searchResult is None:
+                    print("No matching packages were found.")
+                    continue
+                else:
+                    print("Which package would you like to install?")
+                    currentPackageNum = 0
+                    for i in searchResult:
+                        currentPackageNum += 1
+                        packageN = i["Name"]
+                        print("%d) %s" % (currentPackageNum, packageN))
+                        choice = int(input('(#)>'))-1
+                        if searchResult[choice]:
+                            packageN = searchResult[choice]["Name"]
+                            packageD = searchResult[choice]["Description"]
+                            packageI = searchResult[choice]["Images"]
+                            packageR = searchResult[choice]["Github Repository"]
+                            divider = '*'*50
+                            print(divider)
+                            print("Name: %s" % packageN)
+                            print("Description: %s" % packageD)
+                            print("Images: %s" % ', '.join(packageI))
+                            print("Github Repository: %s" % packageR)
+                            print(divider)
+                            response = input(question % (packageN, inputParsed[0]))
+                            if response.lower() == 'y':
+                                print("Okay.")
+                            else:
+                                print("Invalid option chosen.")
                         else:
-                            print("Invalid option chosen.")
-                    else:
-                        print("Invalid software name.")
-                        continue
-    else:
-        print("Missing parameter.")
-        continue
+                            print("Invalid software name.")
+                            continue
+        else:
+            print("Missing parameter.")
