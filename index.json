@@ -1,0 +1,75 @@
+{ "i3" : [ { "Description" : "A configuration for testing.",
+        "Github Repository" : "...",
+        "Images" : [ "1.jpg",
+            "2.jpg",
+            "3.jpg"
+          ],
+        "Name" : "ABC"
+      },
+      { "Description" : "...",
+        "Github Repository" : "...",
+        "Images" : [ "1.jpg",
+            "2.jpg",
+            "3.jpg"
+          ],
+        "Name" : "CDE"
+      },
+      { "Description" : "A configuration for saying hello to the world.",
+        "Github Repository" : "...",
+        "Images" : [ "a.jpg",
+            "b.jpg",
+            "c.jpg"
+          ],
+        "Name" : "Hello, world!"
+      },
+      { "Description" : "A configuration for saying hello to the world.",
+        "Github Repository" : "...",
+        "Images" : [ "a.jpg",
+            "b.jpg",
+            "c.jpg"
+          ],
+        "Name" : "Hello, world!"
+      },
+      { "Description" : "A configuration for saying hello to the world.",
+        "Github Repository" : "...",
+        "Images" : [ "a.jpg",
+            "b.jpg",
+            "c.jpg"
+          ],
+        "Name" : "Hello, world!"
+      },
+      { "Description" : "A configuration for saying hello to the world.",
+        "Github Repository" : "...",
+        "Images" : [ "a.jpg",
+            "b.jpg",
+            "c.jpg"
+          ],
+        "Name" : "Hello, world!"
+      }
+    ],
+  "shittywm" : [ { "Description" : "...",
+        "Github Repository" : "...",
+        "Images" : [ "1.jpg",
+            "2.jpg",
+            "3.jpg"
+          ],
+        "Name" : "EFG"
+      },
+      { "Description" : "...",
+        "Github Repository" : "...",
+        "Images" : [ "1.jpg",
+            "2.jpg",
+            "3.jpg"
+          ],
+        "Name" : "GHI"
+      },
+      { "Description" : "...",
+        "Github Repository" : "...",
+        "Images" : [ "1.jpg",
+            "2.jpg",
+            "3.jpg"
+          ],
+        "Name" : "IJK"
+      }
+    ]
+}
